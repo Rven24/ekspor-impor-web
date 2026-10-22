@@ -1,12 +1,9 @@
-// Nusantara Global Logistics - Main Interactivity Script
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Lucide Icons
   if (window.lucide) {
     lucide.createIcons();
   }
 
-  // Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
   if (mobileMenuBtn && mobileMenu) {
@@ -14,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.toggle('hidden');
     });
 
-    // Close menu when clicking links
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -22,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Hero Quick Widget Tabs (Calculator vs Tracking)
   const tabCalcBtn = document.getElementById('tabCalcBtn');
   const tabTrackBtn = document.getElementById('tabTrackBtn');
   const tabCalcContent = document.getElementById('tabCalcContent');
@@ -50,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Shipping Mode Change Handler (Swaps CBM vs KG vs Container Size input)
   const shippingModeSelect = document.getElementById('shippingMode');
   const volumeWeightLabel = document.getElementById('volumeWeightLabel');
   const volumeWeightInput = document.getElementById('volumeWeightInput');
@@ -74,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
         volumeWeightInput.min = '1';
         volumeWeightInput.step = '1';
       } else {
-        // sea_lcl default
         volumeWeightLabel.innerText = 'Volume Kargo (CBM)';
         volumeWeightUnit.innerText = 'm³ (CBM)';
         volumeWeightInput.placeholder = 'Misal: 2.5';
@@ -85,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Rate Estimator Calculation
   const rateCalcForm = document.getElementById('rateCalcForm');
   const calcResultBox = document.getElementById('calcResultBox');
   const resultRoute = document.getElementById('resultRoute');
@@ -103,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const mode = document.getElementById('shippingMode').value;
       const amount = parseFloat(document.getElementById('volumeWeightInput').value) || 1;
 
-      // Base Rates and Transit Times lookup table
       const routeData = {
         'CN': { name: 'China (Guangzhou/Ningbo/Yiwu)', seaDays: '10 - 14 Hari', airDays: '3 - 5 Hari', lclRate: 3200000, airRate: 145000, fclRate: 28500000 },
         'SG': { name: 'Singapura (PSA / Jurong)', seaDays: '3 - 5 Hari', airDays: '1 - 2 Hari', lclRate: 1800000, airRate: 95000, fclRate: 16000000 },
@@ -142,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
         totalEstCost = originInfo.lclRate * amount;
       }
 
-      // Display results
       resultRoute.innerText = `${originInfo.name} ➔ ${destName}`;
       resultEstTime.innerText = estTime;
       resultEstCost.innerText = `Rp ${totalEstCost.toLocaleString('id-ID')} *`;
@@ -150,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       calcResultBox.classList.remove('hidden');
 
-      // WhatsApp link setup
       const waMsg = `Halo Tim Nusantara Global Logistics, saya ingin konsultasi penawaran resmi untuk pengiriman:
 - Rute: ${originInfo.name} ke ${destName}
 - Moda: ${serviceTitle}
@@ -161,12 +150,10 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
 
       btnSendCalcWa.href = `https://wa.me/6281234567890?text=${encodeURIComponent(waMsg)}`;
 
-      // Scroll slightly into view if needed
       calcResultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
   }
 
-  // Cargo Tracking Logic
   const trackForm = document.getElementById('trackForm');
   const trackResultContainer = document.getElementById('trackResultContainer');
   const trackCodeDisplay = document.getElementById('trackCodeDisplay');
@@ -175,7 +162,6 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
   const trackProgressBar = document.getElementById('trackProgressBar');
   const timelineContainer = document.getElementById('timelineContainer');
 
-  // Preloaded Mock Data
   const trackingDatabase = {
     'NGL-882910': {
       code: 'NGL-882910',
@@ -230,7 +216,6 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
     }
   };
 
-  // Helper function to render tracking info
   function renderTracking(data) {
     trackCodeDisplay.innerText = data.code;
     trackStatusBadge.className = `px-3 py-1 rounded-full text-xs font-semibold border ${data.statusColor}`;
@@ -239,7 +224,6 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
     trackProgressPct.innerText = `${data.percent}%`;
     trackProgressBar.style.width = `${data.percent}%`;
 
-    // Render Steps
     timelineContainer.innerHTML = '';
     data.steps.forEach((step, idx) => {
       let iconColor = 'bg-slate-200 text-slate-500 border-slate-300';
@@ -278,7 +262,6 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
       if (trackingDatabase[codeInput]) {
         renderTracking(trackingDatabase[codeInput]);
       } else {
-        // Generate simulated dynamic tracking for any custom query
         const simulated = {
           code: codeInput || 'NGL-EXPRESS',
           type: 'Kargo Internasional Terdaftar (Sea/Air)',
@@ -299,7 +282,6 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
       }
     });
 
-    // Preset quick tracking buttons
     document.querySelectorAll('.sample-track-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         const code = e.currentTarget.getAttribute('data-code');
@@ -311,7 +293,6 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
     });
   }
 
-  // FAQ Accordion Toggle
   const faqButtons = document.querySelectorAll('.faq-toggle');
   faqButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -320,7 +301,6 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
       const icon = btn.querySelector('.faq-icon');
       const isOpen = content.classList.contains('open');
 
-      // Close all other FAQs
       document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
       document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate'));
 
@@ -331,7 +311,6 @@ Mohon informasi ketersediaan jadwal kapal/pesawat dan rincian dokumen kepabeanan
     });
   });
 
-  // Contact / Quote Request Form Handler
   const quoteForm = document.getElementById('quoteForm');
   const quoteSuccessToast = document.getElementById('quoteSuccessToast');
 
@@ -358,7 +337,6 @@ ${description}
 ---------------------------------------
 (Dikirim via formulir resmi landing page)`;
 
-      // Open WhatsApp Web/App
       const waUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(formattedMsg)}`;
       window.open(waUrl, '_blank');
 

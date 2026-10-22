@@ -7,12 +7,10 @@
   <meta name="description" content="Perusahaan jasa ekspor impor dan freight forwarding terpercaya di Indonesia. Layanan Sea Freight FCL/LCL, Air Freight, Customs Clearance PPJK Bea Cukai, dan Door to Door Service.">
   <meta name="keywords" content="jasa ekspor impor, freight forwarding indonesia, customs clearance, ppjk bea cukai, kargo laut china indonesia, fcl lcl kargo, door to door impor">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN with Custom Configurations -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -47,15 +45,12 @@
     }
   </script>
 
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-cargo-500 selection:text-white">
 
-  <!-- TOP BAR INFO -->
   <div class="bg-navy-950 text-slate-300 text-xs py-2.5 border-b border-navy-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
       <div class="flex items-center gap-6">
@@ -85,12 +80,10 @@
     </div>
   </div>
 
-  <!-- MAIN NAVIGATION HEADER -->
   <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-navy-800 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Brand Logo -->
         <a href="#" class="flex items-center gap-3 group">
           <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-cargo-500 to-cargo-600 flex items-center justify-center text-white shadow-lg shadow-cargo-500/20 group-hover:scale-105 transition-transform">
             <i data-lucide="ship" class="w-6 h-6"></i>
@@ -104,7 +97,6 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
         <nav class="hidden lg:flex items-center gap-7">
           <a href="#tentang" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Tentang Kami</a>
           <a href="#layanan" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Layanan Ekspor Impor</a>
@@ -114,7 +106,6 @@
           <a href="#faq" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">FAQ</a>
         </nav>
 
-        <!-- Header Actions -->
         <div class="hidden sm:flex items-center gap-3">
           <a href="#kontak" class="px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-cargo-500 to-cargo-600 hover:from-cargo-600 hover:to-cargo-700 shadow-md shadow-cargo-500/25 transition-all flex items-center gap-2">
             <i data-lucide="message-square" class="w-4 h-4"></i>
@@ -122,7 +113,6 @@
           </a>
         </div>
 
-        <!-- Mobile Menu Toggle Button -->
         <div class="lg:hidden flex items-center">
           <button id="mobileMenuBtn" aria-label="Buka Menu" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-navy-800 focus:outline-none">
             <i data-lucide="menu" class="w-6 h-6"></i>
@@ -131,7 +121,6 @@
       </div>
     </div>
 
-    <!-- Mobile Drawer Menu -->
     <div id="mobileMenu" class="hidden lg:hidden bg-navy-950 border-b border-navy-800 px-4 pt-3 pb-6 space-y-3">
       <a href="#tentang" class="block py-2 text-slate-300 hover:text-white font-medium border-b border-navy-900">Tentang Kami</a>
       <a href="#layanan" class="block py-2 text-slate-300 hover:text-white font-medium border-b border-navy-900">Layanan Ekspor Impor</a>
@@ -145,9 +134,7 @@
     </div>
   </header>
 
-  <!-- HERO SECTION WITH DUAL-TAB INTERACTIVE WIDGET -->
   <section class="relative bg-gradient-to-b from-navy-900 via-navy-950 to-navy-900 text-white overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32">
-    <!-- Background Shipping Texture & Ambient Glow -->
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(249,115,22,0.12),transparent_50%)] pointer-events-none"></div>
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(2,132,199,0.15),transparent_50%)] pointer-events-none"></div>
     <div class="absolute -top-40 -right-40 w-96 h-96 bg-cargo-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -155,7 +142,6 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         
-        <!-- Left Hero Column: Headline & Value Proposition -->
         <div class="lg:col-span-6 xl:col-span-7 space-y-6">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800/90 border border-navy-700/80 text-xs font-semibold text-ocean-300 shadow-sm">
             <span class="w-2 h-2 rounded-full bg-cargo-500 pulse-glow"></span>
@@ -170,7 +156,6 @@
             Permudah rantai pasok bisnis Anda dengan layanan <em>freight forwarding</em> terintegrasi. Kami menangani pengiriman kargo laut (FCL/LCL), kargo udara kilat, kepabeanan (customs clearance) jalur hijau, hingga pengantaran <em>door-to-door</em> dengan legalitas terjamin.
           </p>
 
-          <!-- Key Hero Features -->
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-slate-200">
             <div class="flex items-center gap-2">
               <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400 flex-shrink-0"></i>
@@ -186,7 +171,6 @@
             </div>
           </div>
 
-          <!-- Hero Action Buttons -->
           <div class="flex flex-wrap items-center gap-4 pt-4">
             <a href="#quick-tools" class="px-6 py-3.5 rounded-xl font-bold text-white bg-cargo-500 hover:bg-cargo-600 shadow-lg shadow-cargo-500/30 transition-all flex items-center gap-2 text-sm sm:text-base">
               <i data-lucide="calculator" class="w-5 h-5"></i>
@@ -198,7 +182,6 @@
             </a>
           </div>
 
-          <!-- Supported Trade Channels Preview -->
           <div class="pt-6 border-t border-navy-800/80">
             <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-3">Jalur Perdagangan Utama:</p>
             <div class="flex flex-wrap items-center gap-3">
@@ -211,11 +194,9 @@
           </div>
         </div>
 
-        <!-- Right Hero Column: Interactive Quick-Tool Widget -->
         <div id="quick-tools" class="lg:col-span-6 xl:col-span-5">
           <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-7 text-slate-800 border border-slate-100 relative">
             
-            <!-- Widget Tabs Header -->
             <div class="flex items-center p-1 bg-slate-100 rounded-xl mb-6">
               <button id="tabCalcBtn" type="button" class="flex-1 py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold bg-white text-slate-900 shadow-sm flex items-center justify-center gap-2 transition-all">
                 <i data-lucide="calculator" class="w-4 h-4 text-cargo-500"></i>
@@ -227,7 +208,6 @@
               </button>
             </div>
 
-            <!-- TAB 1: RATE CALCULATOR -->
             <div id="tabCalcContent" class="space-y-4">
               <div class="border-b border-slate-100 pb-3">
                 <h3 class="font-heading font-bold text-lg text-slate-900">Hitung Estimasi Biaya Kargo</h3>
@@ -235,7 +215,6 @@
               </div>
 
               <form id="rateCalcForm" class="space-y-3.5">
-                <!-- Origin -->
                 <div>
                   <label class="block text-xs font-semibold text-slate-700 mb-1">Negara / Pelabuhan Asal</label>
                   <div class="relative">
@@ -250,7 +229,6 @@
                   </div>
                 </div>
 
-                <!-- Destination -->
                 <div>
                   <label class="block text-xs font-semibold text-slate-700 mb-1">Pelabuhan Tujuan Indonesia</label>
                   <select id="destinationPort" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-cargo-500">
@@ -262,7 +240,6 @@
                   </select>
                 </div>
 
-                <!-- Shipping Mode -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label class="block text-xs font-semibold text-slate-700 mb-1">Moda Pengiriman</label>
@@ -287,7 +264,6 @@
                 </button>
               </form>
 
-              <!-- Result Box (Hidden until calculated) -->
               <div id="calcResultBox" class="hidden mt-4 p-4 rounded-xl bg-slate-50 border border-cargo-200 space-y-3">
                 <div class="flex items-center justify-between text-xs text-slate-600 border-b border-slate-200 pb-2">
                   <span>Rute Terpilih:</span>
@@ -311,7 +287,6 @@
               </div>
             </div>
 
-            <!-- TAB 2: LIVE CARGO TRACKING -->
             <div id="tabTrackContent" class="hidden space-y-4">
               <div class="border-b border-slate-100 pb-3">
                 <h3 class="font-heading font-bold text-lg text-slate-900">Pelacakan Kontainer & AWB</h3>
@@ -330,7 +305,6 @@
                   </div>
                 </div>
 
-                <!-- Sample Clickable Badges -->
                 <div class="pt-1">
                   <span class="text-[11px] text-slate-500 font-medium mr-1">Coba resi sampel:</span>
                   <div class="inline-flex flex-wrap gap-1 mt-1">
@@ -341,7 +315,6 @@
                 </div>
               </form>
 
-              <!-- Tracking Results Container -->
               <div id="trackResultContainer" class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
                 <div class="flex items-center justify-between border-b border-slate-200 pb-3">
                   <div>
@@ -353,7 +326,6 @@
                   </span>
                 </div>
 
-                <!-- Progress Bar -->
                 <div>
                   <div class="flex justify-between text-xs font-medium text-slate-600 mb-1">
                     <span>Progress Perjalanan</span>
@@ -364,9 +336,7 @@
                   </div>
                 </div>
 
-                <!-- Timeline Milestones -->
                 <div class="relative tracking-line space-y-3 pt-2" id="timelineContainer">
-                  <!-- Injected via JavaScript -->
                 </div>
               </div>
             </div>
@@ -378,7 +348,6 @@
     </div>
   </section>
 
-  <!-- TRUST CERTIFICATION & CLIENT LOGOS STRIP -->
   <section class="bg-white border-y border-slate-200 py-6">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -412,7 +381,6 @@
     </div>
   </section>
 
-  <!-- COMPANY STATS / MILESTONES -->
   <section id="tentang" class="py-16 bg-slate-900 text-white relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -450,7 +418,6 @@
     </div>
   </section>
 
-  <!-- CORE SERVICES SECTION -->
   <section id="layanan" class="py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -464,10 +431,8 @@
         </p>
       </div>
 
-      <!-- Services Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Service 1: Sea Freight -->
         <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
           <div>
             <div class="w-14 h-14 rounded-xl bg-blue-50 text-ocean-600 flex items-center justify-center mb-6 group-hover:bg-ocean-600 group-hover:text-white transition-colors">
@@ -489,7 +454,6 @@
           </a>
         </div>
 
-        <!-- Service 2: Air Freight -->
         <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
           <div>
             <div class="w-14 h-14 rounded-xl bg-orange-50 text-cargo-500 flex items-center justify-center mb-6 group-hover:bg-cargo-500 group-hover:text-white transition-colors">
@@ -511,7 +475,6 @@
           </a>
         </div>
 
-        <!-- Service 3: Customs Clearance & PPJK -->
         <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
           <div>
             <div class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
@@ -533,7 +496,6 @@
           </a>
         </div>
 
-        <!-- Service 4: Door to Door All-in -->
         <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
           <div>
             <div class="w-14 h-14 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
@@ -555,7 +517,6 @@
           </a>
         </div>
 
-        <!-- Service 5: Warehousing & Bonded Logistics -->
         <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
           <div>
             <div class="w-14 h-14 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
@@ -577,7 +538,6 @@
           </a>
         </div>
 
-        <!-- Service 6: Export Assistance UMKM -->
         <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
           <div>
             <div class="w-14 h-14 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
@@ -604,7 +564,6 @@
     </div>
   </section>
 
-  <!-- INTERNATIONAL TRADE LANES / ROUTES SECTION -->
   <section id="rute" class="py-20 bg-white border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -624,10 +583,8 @@
         </div>
       </div>
 
-      <!-- Route Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Route 1: China to ID -->
         <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
@@ -655,7 +612,6 @@
           </div>
         </div>
 
-        <!-- Route 2: Singapore to ID -->
         <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
@@ -683,7 +639,6 @@
           </div>
         </div>
 
-        <!-- Route 3: USA to ID -->
         <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
@@ -711,7 +666,6 @@
           </div>
         </div>
 
-        <!-- Route 4: Japan & Korea to ID -->
         <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
@@ -739,7 +693,6 @@
           </div>
         </div>
 
-        <!-- Route 5: Europe to ID -->
         <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
@@ -767,7 +720,6 @@
           </div>
         </div>
 
-        <!-- Route 6: Indonesia Export to Global -->
         <div class="route-card border-2 border-dashed border-cargo-300 rounded-2xl p-6 bg-orange-50/30 relative overflow-hidden flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -795,7 +747,6 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS / 4 STEP PROCESS -->
   <section id="alur-kerja" class="py-20 bg-slate-900 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -811,7 +762,6 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
-        <!-- Step 1 -->
         <div class="relative bg-navy-800/90 rounded-2xl p-6 border border-navy-700 flex flex-col justify-between">
           <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-cargo-500 font-heading font-extrabold text-white flex items-center justify-center shadow-lg shadow-cargo-500/30 text-lg">
             1
@@ -830,7 +780,6 @@
           </div>
         </div>
 
-        <!-- Step 2 -->
         <div class="relative bg-navy-800/90 rounded-2xl p-6 border border-navy-700 flex flex-col justify-between">
           <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-cargo-500 font-heading font-extrabold text-white flex items-center justify-center shadow-lg shadow-cargo-500/30 text-lg">
             2
@@ -849,7 +798,6 @@
           </div>
         </div>
 
-        <!-- Step 3 -->
         <div class="relative bg-navy-800/90 rounded-2xl p-6 border border-navy-700 flex flex-col justify-between">
           <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-cargo-500 font-heading font-extrabold text-white flex items-center justify-center shadow-lg shadow-cargo-500/30 text-lg">
             3
@@ -868,7 +816,6 @@
           </div>
         </div>
 
-        <!-- Step 4 -->
         <div class="relative bg-navy-800/90 rounded-2xl p-6 border border-navy-700 flex flex-col justify-between">
           <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-cargo-500 font-heading font-extrabold text-white flex items-center justify-center shadow-lg shadow-cargo-500/30 text-lg">
             4
@@ -892,13 +839,11 @@
     </div>
   </section>
 
-  <!-- WHY CHOOSE US / VALUE PROPOSITIONS -->
   <section class="py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left Text -->
         <div class="lg:col-span-5 space-y-6">
           <span class="text-xs font-bold tracking-widest text-cargo-600 uppercase">Keunggulan Utama</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading leading-tight">
@@ -941,7 +886,6 @@
           </div>
         </div>
 
-        <!-- Right Comparison Card / Value Box -->
         <div class="lg:col-span-7">
           <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200">
             <h3 class="text-lg font-bold text-slate-900 font-heading mb-6 flex items-center gap-2">
@@ -1005,7 +949,6 @@
     </div>
   </section>
 
-  <!-- CLIENT TESTIMONIALS & CASE STUDIES -->
   <section class="py-20 bg-white border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -1021,7 +964,6 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- Testimonial 1 -->
         <div class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-1 text-amber-400 mb-4">
@@ -1046,7 +988,6 @@
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
         <div class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-1 text-amber-400 mb-4">
@@ -1071,7 +1012,6 @@
           </div>
         </div>
 
-        <!-- Testimonial 3 -->
         <div class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-1 text-amber-400 mb-4">
@@ -1101,7 +1041,6 @@
     </div>
   </section>
 
-  <!-- FAQ SECTION (ACCORDION) -->
   <section id="faq" class="py-20 bg-slate-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -1117,7 +1056,6 @@
 
       <div class="space-y-4">
         
-        <!-- FAQ 1 -->
         <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
           <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="font-bold text-sm sm:text-base text-slate-900">Apa perbedaan FCL dan LCL? Kapan saya harus memilihnya?</span>
@@ -1131,7 +1069,6 @@
           </div>
         </div>
 
-        <!-- FAQ 2 -->
         <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
           <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="font-bold text-sm sm:text-base text-slate-900">Apa saja dokumen pokok yang dibutuhkan untuk melakukan impor resmi di Indonesia?</span>
@@ -1152,7 +1089,6 @@
           </div>
         </div>
 
-        <!-- FAQ 3 -->
         <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
           <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="font-bold text-sm sm:text-base text-slate-900">Apakah saya bisa impor jika bisnis saya belum memiliki izin impor (NIB/API)?</span>
@@ -1165,7 +1101,6 @@
           </div>
         </div>
 
-        <!-- FAQ 4 -->
         <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
           <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="font-bold text-sm sm:text-base text-slate-900">Berapa lama estimasi pengiriman dari China ke Indonesia?</span>
@@ -1182,7 +1117,6 @@
           </div>
         </div>
 
-        <!-- FAQ 5 -->
         <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
           <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="font-bold text-sm sm:text-base text-slate-900">Bagaimana jaminan keamanan barang dan klaim asuransi kargo?</span>
@@ -1200,13 +1134,11 @@
     </div>
   </section>
 
-  <!-- INTEGRATED CONTACT & QUOTE REQUEST FORM -->
   <section id="kontak" class="py-20 bg-gradient-to-br from-navy-900 via-navy-950 to-slate-900 text-white relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left Contact Info -->
         <div class="lg:col-span-5 space-y-6">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cargo-500/20 text-cargo-400 border border-cargo-500/30 text-xs font-bold uppercase tracking-wider">
             Fast Response Support
@@ -1253,7 +1185,6 @@
           </div>
         </div>
 
-        <!-- Right Form -->
         <div class="lg:col-span-7">
           <div class="bg-white rounded-3xl p-7 sm:p-9 text-slate-800 shadow-2xl">
             <h3 class="text-xl sm:text-2xl font-bold font-heading text-slate-900 mb-2">Formulir Permintaan Penawaran Kargo</h3>
@@ -1305,7 +1236,6 @@
               </button>
             </form>
 
-            <!-- Success Toast (Hidden initially) -->
             <div id="quoteSuccessToast" class="hidden mt-4 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-2">
               <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
               <span>Pesan WhatsApp berhasil dibuat! Tab chat WhatsApp telah terbuka. Tim kami akan segera menanggapi rincian Anda.</span>
@@ -1318,13 +1248,11 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="bg-navy-950 text-slate-400 text-xs pt-16 pb-12 border-t border-navy-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-navy-900">
         
-        <!-- Company Info Col -->
         <div class="lg:col-span-2 space-y-4">
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-xl bg-cargo-500 flex items-center justify-center text-white">
@@ -1345,7 +1273,6 @@
           </div>
         </div>
 
-        <!-- Quick Links -->
         <div>
           <h4 class="font-bold text-white text-sm mb-4 font-heading">Navigasi Utama</h4>
           <ul class="space-y-2.5">
@@ -1358,7 +1285,6 @@
           </ul>
         </div>
 
-        <!-- Services Links -->
         <div>
           <h4 class="font-bold text-white text-sm mb-4 font-heading">Layanan Unggulan</h4>
           <ul class="space-y-2.5">
@@ -1371,7 +1297,6 @@
           </ul>
         </div>
 
-        <!-- Office Branches -->
         <div>
           <h4 class="font-bold text-white text-sm mb-4 font-heading">Jaringan Kantor</h4>
           <div class="space-y-3 text-xs">
@@ -1392,7 +1317,6 @@
 
       </div>
 
-      <!-- Copyright & Disclaimer -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
         <p>© 2026 PT Nusantara Global Logistics Tbk. Hak Cipta Dilindungi Undang-Undang.</p>
         <div class="flex items-center gap-6">
@@ -1405,12 +1329,10 @@
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP CTA BUTTON -->
   <a href="https://wa.me/6281234567890?text=Halo%20Nusantara%20Global%20Logistics%2C%20saya%20ingin%20konsultasi%20pengiriman%20kargo%20ekspor%20impor." target="_blank" aria-label="Chat WhatsApp Langsung" class="fixed bottom-6 right-6 z-50 p-3.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-2xl hover:scale-110 transition-all flex items-center justify-center pulse-glow">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
-  <!-- Main JavaScript File -->
   <script src="js/main.js"></script>
 </body>
 </html>
