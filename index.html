@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nusantara Global Logistics (NGL) - Ekspedisi Kargo & Jasa Ekspor Impor Terpercaya</title>
+  <meta name="description" content="Perusahaan jasa ekspor impor dan freight forwarding terpercaya di Indonesia. Layanan Sea Freight FCL/LCL, Air Freight, Customs Clearance PPJK Bea Cukai, dan Door to Door Service.">
+  <meta name="keywords" content="jasa ekspor impor, freight forwarding indonesia, customs clearance, ppjk bea cukai, kargo laut china indonesia, fcl lcl kargo, door to door impor">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with Custom Configurations -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#070f1e',
+              900: '#0A192F',
+              800: '#112240',
+              700: '#1e3a5f',
+              600: '#2c5282'
+            },
+            cargo: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c'
+            },
+            ocean: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-cargo-500 selection:text-white">
+
+  <!-- TOP BAR INFO -->
+  <div class="bg-navy-950 text-slate-300 text-xs py-2.5 border-b border-navy-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-cargo-400"></i>
+          <span>Hotline: <strong class="text-white">+62 (21) 8899-7711</strong></span>
+        </span>
+        <span class="hidden sm:flex items-center gap-1.5">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-cargo-400"></i>
+          <span>cargo@nusantaralogistics.co.id</span>
+        </span>
+        <span class="hidden lg:flex items-center gap-1.5">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-ocean-400"></i>
+          <span>Senin - Sabtu: 08:30 - 18:00 WIB (24/7 Dispatch Port)</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1 text-slate-400">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-cargo-400"></i>
+          Hub: Jakarta • Surabaya • Singapura
+        </span>
+        <div class="h-3 w-px bg-slate-700 hidden sm:block"></div>
+        <a href="#quick-tools" class="text-cargo-400 hover:text-cargo-300 font-semibold flex items-center gap-1">
+          <i data-lucide="scan-line" class="w-3.5 h-3.5"></i> Lacak Kargo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-navy-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-cargo-500 to-cargo-600 flex items-center justify-center text-white shadow-lg shadow-cargo-500/20 group-hover:scale-105 transition-transform">
+            <i data-lucide="ship" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-heading font-extrabold text-xl text-white tracking-tight">NUSANTARA</span>
+              <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-cargo-500 text-white tracking-widest uppercase">Global</span>
+            </div>
+            <p class="text-[11px] text-slate-400 tracking-wider font-medium">LOGISTICS & FREIGHT FORWARDING</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7">
+          <a href="#tentang" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Tentang Kami</a>
+          <a href="#layanan" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Layanan Ekspor Impor</a>
+          <a href="#rute" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Rute Internasional</a>
+          <a href="#quick-tools" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Kalkulator & Lacak</a>
+          <a href="#alur-kerja" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Alur Kerja</a>
+          <a href="#faq" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">FAQ</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#kontak" class="px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-cargo-500 to-cargo-600 hover:from-cargo-600 hover:to-cargo-700 shadow-md shadow-cargo-500/25 transition-all flex items-center gap-2">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            <span>Minta Penawaran</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="lg:hidden flex items-center">
+          <button id="mobileMenuBtn" aria-label="Buka Menu" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-navy-800 focus:outline-none">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-navy-950 border-b border-navy-800 px-4 pt-3 pb-6 space-y-3">
+      <a href="#tentang" class="block py-2 text-slate-300 hover:text-white font-medium border-b border-navy-900">Tentang Kami</a>
+      <a href="#layanan" class="block py-2 text-slate-300 hover:text-white font-medium border-b border-navy-900">Layanan Ekspor Impor</a>
+      <a href="#rute" class="block py-2 text-slate-300 hover:text-white font-medium border-b border-navy-900">Rute Internasional</a>
+      <a href="#quick-tools" class="block py-2 text-slate-300 hover:text-white font-medium border-b border-navy-900">Kalkulator & Lacak</a>
+      <a href="#alur-kerja" class="block py-2 text-slate-300 hover:text-white font-medium border-b border-navy-900">Alur Kerja</a>
+      <a href="#faq" class="block py-2 text-slate-300 hover:text-white font-medium border-b border-navy-900">FAQ</a>
+      <a href="#kontak" class="w-full mt-3 py-2.5 px-4 text-center rounded-lg text-white font-semibold bg-cargo-500 hover:bg-cargo-600 flex items-center justify-center gap-2">
+        <i data-lucide="message-square" class="w-4 h-4"></i> Minta Penawaran Kargo
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH DUAL-TAB INTERACTIVE WIDGET -->
+  <section class="relative bg-gradient-to-b from-navy-900 via-navy-950 to-navy-900 text-white overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32">
+    <!-- Background Shipping Texture & Ambient Glow -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(249,115,22,0.12),transparent_50%)] pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(2,132,199,0.15),transparent_50%)] pointer-events-none"></div>
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-cargo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Column: Headline & Value Proposition -->
+        <div class="lg:col-span-6 xl:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800/90 border border-navy-700/80 text-xs font-semibold text-ocean-300 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-cargo-500 pulse-glow"></span>
+            <span>Mitra PPJK Resmi Bea Cukai & Bersertifikat ISO 9001:2015</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15]">
+            Solusi Ekspor Impor Terpercaya & <span class="text-gradient-orange">Kargo Global</span> Tanpa Hambatan
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl">
+            Permudah rantai pasok bisnis Anda dengan layanan <em>freight forwarding</em> terintegrasi. Kami menangani pengiriman kargo laut (FCL/LCL), kargo udara kilat, kepabeanan (customs clearance) jalur hijau, hingga pengantaran <em>door-to-door</em> dengan legalitas terjamin.
+          </p>
+
+          <!-- Key Hero Features -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-slate-200">
+            <div class="flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400 flex-shrink-0"></i>
+              <span>100% Legal & Berizin PPJK</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="tag" class="w-5 h-5 text-cargo-400 flex-shrink-0"></i>
+              <span>Tarif Transparan Tanpa Biaya Siluman</span>
+            </div>
+            <div class="flex items-center gap-2 col-span-2 sm:col-span-1">
+              <i data-lucide="clock" class="w-5 h-5 text-ocean-400 flex-shrink-0"></i>
+              <span>Pengurusan Dokumen Kilat</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#quick-tools" class="px-6 py-3.5 rounded-xl font-bold text-white bg-cargo-500 hover:bg-cargo-600 shadow-lg shadow-cargo-500/30 transition-all flex items-center gap-2 text-sm sm:text-base">
+              <i data-lucide="calculator" class="w-5 h-5"></i>
+              <span>Cek Estimasi Tarif Kargo</span>
+            </a>
+            <a href="https://wa.me/6281234567890?text=Halo%20Nusantara%20Global%20Logistics%2C%20saya%20ingin%20konsultasi%20pengiriman%20kargo%20ekspor%2Fimpor." target="_blank" class="px-6 py-3.5 rounded-xl font-semibold text-slate-200 bg-navy-800/80 hover:bg-navy-800 border border-slate-700/80 hover:border-slate-500 transition-all flex items-center gap-2 text-sm sm:text-base">
+              <i data-lucide="phone" class="w-5 h-5 text-emerald-400"></i>
+              <span>Konsultasi WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Supported Trade Channels Preview -->
+          <div class="pt-6 border-t border-navy-800/80">
+            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-3">Jalur Perdagangan Utama:</p>
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="px-2.5 py-1 rounded bg-navy-800 text-xs font-medium text-slate-300 border border-navy-700">🇨🇳 China - ID</span>
+              <span class="px-2.5 py-1 rounded bg-navy-800 text-xs font-medium text-slate-300 border border-navy-700">🇸🇬 Singapore - ID</span>
+              <span class="px-2.5 py-1 rounded bg-navy-800 text-xs font-medium text-slate-300 border border-navy-700">🇺🇸 USA - ID</span>
+              <span class="px-2.5 py-1 rounded bg-navy-800 text-xs font-medium text-slate-300 border border-navy-700">🇯🇵 Japan - ID</span>
+              <span class="px-2.5 py-1 rounded bg-navy-800 text-xs font-medium text-slate-300 border border-navy-700">🇪🇺 Europe - ID</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Column: Interactive Quick-Tool Widget -->
+        <div id="quick-tools" class="lg:col-span-6 xl:col-span-5">
+          <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-7 text-slate-800 border border-slate-100 relative">
+            
+            <!-- Widget Tabs Header -->
+            <div class="flex items-center p-1 bg-slate-100 rounded-xl mb-6">
+              <button id="tabCalcBtn" type="button" class="flex-1 py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold bg-white text-slate-900 shadow-sm flex items-center justify-center gap-2 transition-all">
+                <i data-lucide="calculator" class="w-4 h-4 text-cargo-500"></i>
+                <span>Kalkulator Tarif</span>
+              </button>
+              <button id="tabTrackBtn" type="button" class="flex-1 py-2.5 px-3 rounded-lg text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 flex items-center justify-center gap-2 transition-all">
+                <i data-lucide="package-search" class="w-4 h-4 text-ocean-600"></i>
+                <span>Lacak Kargo</span>
+              </button>
+            </div>
+
+            <!-- TAB 1: RATE CALCULATOR -->
+            <div id="tabCalcContent" class="space-y-4">
+              <div class="border-b border-slate-100 pb-3">
+                <h3 class="font-heading font-bold text-lg text-slate-900">Hitung Estimasi Biaya Kargo</h3>
+                <p class="text-xs text-slate-500">Dapatkan perkiraan tarif transparan & durasi pengiriman secara instan.</p>
+              </div>
+
+              <form id="rateCalcForm" class="space-y-3.5">
+                <!-- Origin -->
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Negara / Pelabuhan Asal</label>
+                  <div class="relative">
+                    <select id="originCountry" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-cargo-500">
+                      <option value="CN">🇨🇳 China (Guangzhou / Ningbo / Yiwu)</option>
+                      <option value="SG">🇸🇬 Singapura (PSA / Jurong Port)</option>
+                      <option value="US">🇺🇸 Amerika Serikat (LA / NY Port)</option>
+                      <option value="JP">🇯🇵 Jepang (Tokyo / Yokohama)</option>
+                      <option value="KR">🇰🇷 Korea Selatan (Busan / Incheon)</option>
+                      <option value="EU">🇪🇺 Uni Eropa (Hamburg / Rotterdam)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Destination -->
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Pelabuhan Tujuan Indonesia</label>
+                  <select id="destinationPort" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-cargo-500">
+                    <option value="JKT">Jakarta - Pelabuhan Tanjung Priok (JICT)</option>
+                    <option value="SBY">Surabaya - Pelabuhan Tanjung Perak</option>
+                    <option value="MDN">Medan - Pelabuhan Belawan</option>
+                    <option value="SMG">Semarang - Pelabuhan Tanjung Emas</option>
+                    <option value="MKS">Makassar - Pelabuhan Soekarno Hatta</option>
+                  </select>
+                </div>
+
+                <!-- Shipping Mode -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Moda Pengiriman</label>
+                    <select id="shippingMode" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-cargo-500">
+                      <option value="sea_lcl">Laut LCL (Konsolidasi)</option>
+                      <option value="sea_fcl">Laut FCL (Kontainer Penuh)</option>
+                      <option value="air_express">Udara Express (Air Cargo)</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label id="volumeWeightLabel" class="block text-xs font-semibold text-slate-700 mb-1">Volume Kargo (CBM)</label>
+                    <div class="relative flex items-center">
+                      <input type="number" id="volumeWeightInput" value="2.5" min="0.5" step="0.1" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 pl-3 pr-16 text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-cargo-500" placeholder="2.5">
+                      <span id="volumeWeightUnit" class="absolute right-3 text-xs font-semibold text-slate-400">m³ (CBM)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="w-full py-3 rounded-xl bg-cargo-500 hover:bg-cargo-600 text-white font-bold text-sm shadow-md shadow-cargo-500/20 transition-all flex items-center justify-center gap-2">
+                  <i data-lucide="calculator" class="w-4 h-4"></i>
+                  <span>Hitung Estimasi Biaya</span>
+                </button>
+              </form>
+
+              <!-- Result Box (Hidden until calculated) -->
+              <div id="calcResultBox" class="hidden mt-4 p-4 rounded-xl bg-slate-50 border border-cargo-200 space-y-3">
+                <div class="flex items-center justify-between text-xs text-slate-600 border-b border-slate-200 pb-2">
+                  <span>Rute Terpilih:</span>
+                  <strong id="resultRoute" class="text-slate-900 font-semibold">-</strong>
+                </div>
+                <div class="flex items-center justify-between text-xs text-slate-600 border-b border-slate-200 pb-2">
+                  <span>Estimasi Waktu Tiba:</span>
+                  <span id="resultEstTime" class="font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">-</span>
+                </div>
+                <div class="flex items-baseline justify-between pt-1">
+                  <div>
+                    <span class="text-xs text-slate-500 block">Perkiraan Biaya Dasar:</span>
+                    <span id="resultEstCost" class="text-lg sm:text-xl font-extrabold text-cargo-600">Rp 0</span>
+                  </div>
+                  <a id="btnSendCalcWa" href="#" target="_blank" class="px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center gap-1.5 shadow-sm">
+                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                    <span>Kirim ke WA</span>
+                  </a>
+                </div>
+                <p id="resultServiceNote" class="text-[11px] text-slate-500 leading-tight italic">*Estimasi belum termasuk pajak impor spesifik / bea masuk HS Code. Konsultasikan detail HS Code Anda ke tim ahli kami.</p>
+              </div>
+            </div>
+
+            <!-- TAB 2: LIVE CARGO TRACKING -->
+            <div id="tabTrackContent" class="hidden space-y-4">
+              <div class="border-b border-slate-100 pb-3">
+                <h3 class="font-heading font-bold text-lg text-slate-900">Pelacakan Kontainer & AWB</h3>
+                <p class="text-xs text-slate-500">Cek status posisi kontainer, kapal kargo, dan perizinan bea cukai secara live.</p>
+              </div>
+
+              <form id="trackForm" class="space-y-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Nomor Resi / Kontainer / AWB</label>
+                  <div class="flex gap-2">
+                    <input type="text" id="trackNumberInput" value="NGL-882910" placeholder="Contoh: NGL-882910" class="flex-1 bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-800 focus:outline-none focus:ring-2 focus:ring-ocean-500">
+                    <button type="submit" class="px-4 py-2.5 rounded-lg bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-colors">
+                      <i data-lucide="search" class="w-4 h-4"></i>
+                      <span>Lacak</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Sample Clickable Badges -->
+                <div class="pt-1">
+                  <span class="text-[11px] text-slate-500 font-medium mr-1">Coba resi sampel:</span>
+                  <div class="inline-flex flex-wrap gap-1 mt-1">
+                    <button type="button" data-code="NGL-882910" class="sample-track-btn text-[10px] bg-slate-100 hover:bg-slate-200 text-slate-700 font-mono px-2 py-0.5 rounded border border-slate-200">NGL-882910 (Laut)</button>
+                    <button type="button" data-code="NGL-554102" class="sample-track-btn text-[10px] bg-slate-100 hover:bg-slate-200 text-slate-700 font-mono px-2 py-0.5 rounded border border-slate-200">NGL-554102 (Udara)</button>
+                    <button type="button" data-code="NGL-110293" class="sample-track-btn text-[10px] bg-slate-100 hover:bg-slate-200 text-slate-700 font-mono px-2 py-0.5 rounded border border-slate-200">NGL-110293 (FCL USA)</button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Tracking Results Container -->
+              <div id="trackResultContainer" class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                  <div>
+                    <span class="text-[10px] uppercase font-bold text-slate-400 block">ID Tracking</span>
+                    <strong id="trackCodeDisplay" class="font-mono text-sm text-slate-900">NGL-882910</strong>
+                  </div>
+                  <span id="trackStatusBadge" class="px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 border border-amber-300">
+                    Customs Clearance
+                  </span>
+                </div>
+
+                <!-- Progress Bar -->
+                <div>
+                  <div class="flex justify-between text-xs font-medium text-slate-600 mb-1">
+                    <span>Progress Perjalanan</span>
+                    <span id="trackProgressPct" class="font-bold text-ocean-600">75%</span>
+                  </div>
+                  <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                    <div id="trackProgressBar" class="bg-gradient-to-r from-ocean-500 to-cargo-500 h-full w-3/4 transition-all duration-500"></div>
+                  </div>
+                </div>
+
+                <!-- Timeline Milestones -->
+                <div class="relative tracking-line space-y-3 pt-2" id="timelineContainer">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST CERTIFICATION & CLIENT LOGOS STRIP -->
+  <section class="bg-white border-y border-slate-200 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Akreditasi & Sertifikasi Resmi</p>
+          <p class="text-sm font-semibold text-slate-800">Standar Kepatuhan Hukum Kepabeanan & Asosiasi Global</p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 opacity-75 grayscale hover:grayscale-0 transition-all">
+          <div class="flex items-center gap-1.5 font-bold text-slate-700 text-sm">
+            <i data-lucide="badge-check" class="w-5 h-5 text-ocean-600"></i>
+            <span>PPJK RESMI</span>
+          </div>
+          <div class="flex items-center gap-1.5 font-bold text-slate-700 text-sm">
+            <i data-lucide="award" class="w-5 h-5 text-cargo-500"></i>
+            <span>ISO 9001:2015</span>
+          </div>
+          <div class="flex items-center gap-1.5 font-bold text-slate-700 text-sm">
+            <i data-lucide="plane" class="w-5 h-5 text-blue-600"></i>
+            <span>IATA CARGO AGENT</span>
+          </div>
+          <div class="flex items-center gap-1.5 font-bold text-slate-700 text-sm">
+            <i data-lucide="anchor" class="w-5 h-5 text-indigo-600"></i>
+            <span>ALFI / INFA MEMBER</span>
+          </div>
+          <div class="flex items-center gap-1.5 font-bold text-slate-700 text-sm">
+            <i data-lucide="shield" class="w-5 h-5 text-emerald-600"></i>
+            <span>INSW TERINTEGRASI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY STATS / MILESTONES -->
+  <section id="tentang" class="py-16 bg-slate-900 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold tracking-widest text-cargo-400 uppercase">Rekam Jejak Kredibel</span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mt-2 font-heading">
+          Dipercaya Lebih Dari 1.200+ Perusahaan Manufaktur & Importir
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400 mt-3">
+          Nusantara Global Logistics berdiri dengan visi menyederhanakan perdagangan internasional bagi bisnis di Indonesia. Kami menjamin kepastian waktu, transparansi biaya, dan kepatuhan hukum kepabeanan menyeluruh.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
+        <div class="bg-navy-800/80 p-6 rounded-2xl border border-navy-700">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-cargo-400 font-heading">15+</div>
+          <p class="text-sm font-semibold text-slate-200 mt-2">Tahun Pengalaman</p>
+          <p class="text-xs text-slate-400 mt-1">Menguasai regulasi kepabeanan & rantai pasok global.</p>
+        </div>
+        <div class="bg-navy-800/80 p-6 rounded-2xl border border-navy-700">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-ocean-400 font-heading">65+</div>
+          <p class="text-sm font-semibold text-slate-200 mt-2">Negara Jaringan Mitra</p>
+          <p class="text-xs text-slate-400 mt-1">Agen freight forwarder di pelabuhan utama dunia.</p>
+        </div>
+        <div class="bg-navy-800/80 p-6 rounded-2xl border border-navy-700">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-heading">18.500+</div>
+          <p class="text-sm font-semibold text-slate-200 mt-2">TEUs Kontainer Terkirim</p>
+          <p class="text-xs text-slate-400 mt-1">Aman tiba di tujuan tanpa penahanan pabean.</p>
+        </div>
+        <div class="bg-navy-800/80 p-6 rounded-2xl border border-navy-700">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-emerald-400 font-heading">99.4%</div>
+          <p class="text-sm font-semibold text-slate-200 mt-2">Ketepatan Waktu Clearance</p>
+          <p class="text-xs text-slate-400 mt-1">Minim risiko demurrage dan storage fee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE SERVICES SECTION -->
+  <section id="layanan" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-cargo-600 uppercase">Layanan Unggulan</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">
+          Solusi Logistik Internasional End-to-End
+        </h2>
+        <p class="text-base text-slate-600 mt-3">
+          Dari pengurusan izin di instansi terkait hingga barang sampai di rak gudang Anda, seluruh proses kami kelola secara profesional dan transparan.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Sea Freight -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-blue-50 text-ocean-600 flex items-center justify-center mb-6 group-hover:bg-ocean-600 group-hover:text-white transition-colors">
+              <i data-lucide="ship" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-heading mb-3">Sea Freight (Kargo Laut)</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Pilihan paling ekonomis untuk muatan besar dengan opsi kontainer penuh (FCL 20ft/40ft/40HC) maupun konsolidasi muatan kecil (LCL per CBM).
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> FCL (Full Container Load) & LCL (Less than Container)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Aliansi pelayaran utama (Maersk, MSC, Evergreen, Wan Hai)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Penjadwalan mingguan reguler (Direct & Transshipment)</li>
+            </ul>
+          </div>
+          <a href="#kontak" class="inline-flex items-center gap-2 text-xs font-bold text-ocean-600 group-hover:text-ocean-700">
+            <span>Konsultasi Sea Freight</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+          </a>
+        </div>
+
+        <!-- Service 2: Air Freight -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-orange-50 text-cargo-500 flex items-center justify-center mb-6 group-hover:bg-cargo-500 group-hover:text-white transition-colors">
+              <i data-lucide="plane" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-heading mb-3">Air Freight (Kargo Udara Kilat)</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Solusi pengiriman berkecepatan tinggi untuk kargo penting, sampel produk, suku cadang mesin mendesak, dan barang bernilai tinggi (high value).
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Layanan Express 2-4 Hari & General Air Cargo</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Prioritas booking ruang kargo maskapai internasional</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Pengawasan suhu khusus (Cold Chain / Farmasi)</li>
+            </ul>
+          </div>
+          <a href="#kontak" class="inline-flex items-center gap-2 text-xs font-bold text-cargo-600 group-hover:text-cargo-700">
+            <span>Konsultasi Air Freight</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+          </a>
+        </div>
+
+        <!-- Service 3: Customs Clearance & PPJK -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+              <i data-lucide="file-check" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-heading mb-3">Customs Clearance & PPJK</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Pengurusan dokumen kepabeanan resmi (PIB & PEB) oleh ahli kepabeanan tersertifikasi. Memastikan jalur hijau dan meminimalkan biaya periksa fisik.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Penentuan klasifikasi tarif HS Code tepat</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Pengurusan perizinan Lartas: BPOM, SNI, LS, Karantina</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Integrasi sistem CEISA Bea Cukai & INSW</li>
+            </ul>
+          </div>
+          <a href="#kontak" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 group-hover:text-emerald-700">
+            <span>Konsultasi PPJK & Bea Cukai</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+          </a>
+        </div>
+
+        <!-- Service 4: Door to Door All-in -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+              <i data-lucide="truck" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-heading mb-3">Door to Door All-In</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Layanan praktis terima beres. Kami jemput barang dari pabrik supplier di luar negeri, urus seluruh perizinan dan pajak impor, lalu diantar langsung ke gudang Anda.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Bebas repot urus pajak dan dokumen terpisah</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Jaringan gudang penerima di Guangzhou, Yiwu, Singapura</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Asuransi proteksi kargo menyeluruh</li>
+            </ul>
+          </div>
+          <a href="#kontak" class="inline-flex items-center gap-2 text-xs font-bold text-purple-600 group-hover:text-purple-700">
+            <span>Konsultasi Door to Door</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+          </a>
+        </div>
+
+        <!-- Service 5: Warehousing & Bonded Logistics -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+              <i data-lucide="warehouse" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-heading mb-3">Pergudangan & Gudang Berikat (PLB)</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Fasilitas Pusat Logistik Berikat (PLB) untuk efisiensi cashflow penangguhan bea masuk, pergudangan aman berstandar modern, dan konsolidasi kargo.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Penangguhan pembayaran bea masuk & pajak impor</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Sistem WMS barcode terintegrasi real-time</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Layanan repackaging, relabeling, dan quality check</li>
+            </ul>
+          </div>
+          <a href="#kontak" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-600 group-hover:text-indigo-700">
+            <span>Konsultasi Pergudangan</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+          </a>
+        </div>
+
+        <!-- Service 6: Export Assistance UMKM -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+              <i data-lucide="globe-2" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-heading mb-3">Pendampingan Ekspor Produk UMKM</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Bantu produsen dan pengusaha lokal menembus pasar ekspor dunia. Pendampingan legalitas Certificate of Origin (SKA Form D/E/AK), sertifikasi fumigasi, dan negosiasi incoterms.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Pengurusan SKA / COO untuk diskon bea masuk di negara tujuan</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Layanan undername ekspor resmi bagi usaha tanpa izin ekspor</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Pengiriman komoditas pertanian, kerajinan, & makanan olahan</li>
+            </ul>
+          </div>
+          <a href="#kontak" class="inline-flex items-center gap-2 text-xs font-bold text-amber-600 group-hover:text-amber-700">
+            <span>Konsultasi Ekspor UMKM</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERNATIONAL TRADE LANES / ROUTES SECTION -->
+  <section id="rute" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-6">
+        <div>
+          <span class="text-xs font-bold tracking-widest text-cargo-600 uppercase">Jaringan Samudera & Udara</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">
+            Rute Dagang Utama & Jadwal Pelayaran Rutin
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+            Koneksi langsung ke pelabuhan tersibuk di dunia dengan kepastian slot kontainer dan harga kompetitif.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-xs text-slate-500 font-semibold">Tersedia jadwal mingguan:</span>
+          <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">Slot Dijamin Tersedia</span>
+        </div>
+      </div>
+
+      <!-- Route Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Route 1: China to ID -->
+        <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🇨🇳</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400"></i>
+              <span class="text-2xl">🇮🇩</span>
+            </div>
+            <span class="text-xs font-bold text-cargo-600 bg-cargo-50 px-2.5 py-1 rounded-md border border-cargo-200">Rute Terpopuler</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 font-heading">China ➔ Indonesia</h3>
+          <p class="text-xs text-slate-500 mt-1 mb-4">Guangzhou, Shenzhen, Ningbo, Shanghai, Yiwu ke Tanjung Priok / Perak</p>
+          <div class="space-y-2 border-t border-slate-200 pt-3 text-xs">
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Laut (Sea):</span>
+              <strong class="text-slate-900 font-semibold">10 - 14 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Udara (Air):</span>
+              <strong class="text-slate-900 font-semibold">3 - 5 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Fasilitas:</span>
+              <span class="text-emerald-700 font-medium">Gudang Konsolidasi Sendiri di Guangzhou</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route 2: Singapore to ID -->
+        <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🇸🇬</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400"></i>
+              <span class="text-2xl">🇮🇩</span>
+            </div>
+            <span class="text-xs font-bold text-ocean-600 bg-ocean-50 px-2.5 py-1 rounded-md border border-ocean-200">Express Short-Sea</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 font-heading">Singapura ➔ Indonesia</h3>
+          <p class="text-xs text-slate-500 mt-1 mb-4">PSA Port & Changi Air Cargo ke Jakarta & Batam</p>
+          <div class="space-y-2 border-t border-slate-200 pt-3 text-xs">
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Laut (Sea):</span>
+              <strong class="text-slate-900 font-semibold">3 - 5 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Udara (Air):</span>
+              <strong class="text-slate-900 font-semibold">1 - 2 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Fasilitas:</span>
+              <span class="text-emerald-700 font-medium">Kantor Representatif Jurong</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route 3: USA to ID -->
+        <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🇺🇸</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400"></i>
+              <span class="text-2xl">🇮🇩</span>
+            </div>
+            <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md border border-indigo-200">Trans-Pasifik</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 font-heading">Amerika Serikat ➔ Indonesia</h3>
+          <p class="text-xs text-slate-500 mt-1 mb-4">Los Angeles, Long Beach, Seattle, New York ke Pelabuhan Indonesia</p>
+          <div class="space-y-2 border-t border-slate-200 pt-3 text-xs">
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Laut (Sea):</span>
+              <strong class="text-slate-900 font-semibold">24 - 32 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Udara (Air):</span>
+              <strong class="text-slate-900 font-semibold">5 - 7 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Fasilitas:</span>
+              <span class="text-emerald-700 font-medium">Spesialis Mesin Berat & Suku Cadang</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route 4: Japan & Korea to ID -->
+        <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🇯🇵 🇰🇷</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400"></i>
+              <span class="text-2xl">🇮🇩</span>
+            </div>
+            <span class="text-xs font-bold text-slate-700 bg-slate-200 px-2.5 py-1 rounded-md">High-Tech & Otomotif</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 font-heading">Jepang & Korea ➔ Indonesia</h3>
+          <p class="text-xs text-slate-500 mt-1 mb-4">Tokyo, Yokohama, Busan, Incheon ke Jakarta & Surabaya</p>
+          <div class="space-y-2 border-t border-slate-200 pt-3 text-xs">
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Laut (Sea):</span>
+              <strong class="text-slate-900 font-semibold">12 - 16 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Udara (Air):</span>
+              <strong class="text-slate-900 font-semibold">3 - 5 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Fasilitas:</span>
+              <span class="text-emerald-700 font-medium">Bebas Pajak EPA / AKFTA dengan COO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route 5: Europe to ID -->
+        <div class="route-card border border-slate-200 rounded-2xl p-6 bg-slate-50/60 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🇪🇺</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400"></i>
+              <span class="text-2xl">🇮🇩</span>
+            </div>
+            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Uni Eropa</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 font-heading">Eropa ➔ Indonesia</h3>
+          <p class="text-xs text-slate-500 mt-1 mb-4">Rotterdam, Hamburg, Antwerp, Genoa ke Tanjung Priok</p>
+          <div class="space-y-2 border-t border-slate-200 pt-3 text-xs">
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Laut (Sea):</span>
+              <strong class="text-slate-900 font-semibold">26 - 35 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Transit Udara (Air):</span>
+              <strong class="text-slate-900 font-semibold">4 - 7 Hari</strong>
+            </div>
+            <div class="flex justify-between text-slate-600">
+              <span>Fasilitas:</span>
+              <span class="text-emerald-700 font-medium">Handling Bahan Kimia & Perizinan Khusus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route 6: Indonesia Export to Global -->
+        <div class="route-card border-2 border-dashed border-cargo-300 rounded-2xl p-6 bg-orange-50/30 relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-2">
+                <span class="text-2xl">🇮🇩</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-cargo-500"></i>
+                <span class="text-2xl">🌍</span>
+              </div>
+              <span class="text-xs font-bold text-white bg-cargo-500 px-2.5 py-1 rounded-md">Ekspor Komoditas</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 font-heading">Indonesia ➔ Seluruh Dunia</h3>
+            <p class="text-xs text-slate-500 mt-1 mb-4">Ekspor hasil bumi, rempah, kopi, briket arang, perikanan, & furnitur</p>
+            <p class="text-xs text-slate-600">Kami bantu penerbitan Phytosanitary, Fumigasi, PEB, & pengurusan dokumen LC bank internasional.</p>
+          </div>
+          <div class="pt-4">
+            <a href="#kontak" class="w-full py-2 px-3 rounded-lg bg-navy-900 hover:bg-navy-800 text-white font-semibold text-xs flex items-center justify-center gap-2">
+              <span>Daftar Konsultasi Ekspor</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS / 4 STEP PROCESS -->
+  <section id="alur-kerja" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-cargo-400 uppercase">Transparansi Proses</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mt-2 font-heading">
+          4 Langkah Mudah Pengiriman Kargo Bersama Kami
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-3">
+          Pengalaman ekspor-impor bebas cemas dengan alur kerja terstruktur dan pengawasan dokumen ketat di setiap fase.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Step 1 -->
+        <div class="relative bg-navy-800/90 rounded-2xl p-6 border border-navy-700 flex flex-col justify-between">
+          <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-cargo-500 font-heading font-extrabold text-white flex items-center justify-center shadow-lg shadow-cargo-500/30 text-lg">
+            1
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-navy-700/80 text-cargo-400 flex items-center justify-center mb-5 mt-2">
+              <i data-lucide="file-text" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading mb-2">Konsultasi & Penawaran</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Kirimkan rincian invoice & packing list barang. Tim ahli kami memvalidasi HS Code, menghitung estimasi pajak/bea masuk, dan menerbitkan penawaran all-in transparan.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-navy-700/80 text-[11px] text-ocean-300 font-semibold">
+            Estimasi waktu: <span class="text-white">1 - 3 Jam Respons</span>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative bg-navy-800/90 rounded-2xl p-6 border border-navy-700 flex flex-col justify-between">
+          <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-cargo-500 font-heading font-extrabold text-white flex items-center justify-center shadow-lg shadow-cargo-500/30 text-lg">
+            2
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-navy-700/80 text-ocean-400 flex items-center justify-center mb-5 mt-2">
+              <i data-lucide="package-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading mb-2">Penjemputan & Muat Kargo</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Barang dijemput dari pabrik supplier atau diterima di gudang konsolidasi kami di China, Singapura, atau pelabuhan asal. Dilakukan pemeriksaan kemasan & labeling standar internasional.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-navy-700/80 text-[11px] text-ocean-300 font-semibold">
+            Estimasi waktu: <span class="text-white">1 - 2 Hari Kerja</span>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative bg-navy-800/90 rounded-2xl p-6 border border-navy-700 flex flex-col justify-between">
+          <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-cargo-500 font-heading font-extrabold text-white flex items-center justify-center shadow-lg shadow-cargo-500/30 text-lg">
+            3
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-navy-700/80 text-emerald-400 flex items-center justify-center mb-5 mt-2">
+              <i data-lucide="navigation" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading mb-2">Pengapalan & Live Tracking</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Kargo dimuat ke kapal laut atau pesawat kargo. Anda menerima nomor resi resmi dan dapat memantau pergerakan kapal serta estimasi jadwal bersandar secara real-time.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-navy-700/80 text-[11px] text-ocean-300 font-semibold">
+            Fitur: <span class="text-white">Live Tracking 24/7</span>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative bg-navy-800/90 rounded-2xl p-6 border border-navy-700 flex flex-col justify-between">
+          <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-cargo-500 font-heading font-extrabold text-white flex items-center justify-center shadow-lg shadow-cargo-500/30 text-lg">
+            4
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-navy-700/80 text-amber-400 flex items-center justify-center mb-5 mt-2">
+              <i data-lucide="home" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold font-heading mb-2">Customs & Pengantaran</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Tim PPJK kami mengurus persetujuan PIB & SPPB Bea Cukai. Setelah rilis, armada trucking kami mengantar muatan kontainer aman sampai ke depan pintu gudang Anda.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-navy-700/80 text-[11px] text-ocean-300 font-semibold">
+            Garansi: <span class="text-white">SPPB Cepat & Aman</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US / VALUE PROPOSITIONS -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Text -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold tracking-widest text-cargo-600 uppercase">Keunggulan Utama</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading leading-tight">
+            Mengapa Perusahaan Besar Memilih Nusantara Global Logistics?
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Dalam dunia ekspor-impor, keterlambatan 1 hari atau kesalahan dokumen dapat berakibat denda pabean ratusan juta rupiah. Kami menghilangkan seluruh risiko tersebut dengan kepatuhan hukum total dan sistem operasional terintegrasi.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Legalitas 100% Sah & Bebas Masalah Hukum</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Semua pengiriman diproses melalui portal resmi Bea Cukai Republik Indonesia dengan izin PPJK teregistrasi.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-cargo-100 text-cargo-700 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="coins" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Transparansi Finansial Tanpa Hidden Cost</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Penawaran harga yang kami berikan mengikat dan jelas, tidak ada tagihan siluman mendadak saat barang tiba di pelabuhan.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-ocean-100 text-ocean-700 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="user-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Dedicated Account Manager 1-on-1</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Anda mendapatkan staf konsultan kargo khusus yang siap menjawab dan mendampingi status logistik Anda kapan saja.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Comparison Card / Value Box -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200">
+            <h3 class="text-lg font-bold text-slate-900 font-heading mb-6 flex items-center gap-2">
+              <i data-lucide="scale" class="w-5 h-5 text-cargo-500"></i>
+              <span>Perbandingan Layanan: Ekspedisi Biasa vs NGL Freight</span>
+            </h3>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs sm:text-sm">
+                <thead>
+                  <tr class="border-b border-slate-200 text-slate-400 uppercase text-[10px] tracking-wider">
+                    <th class="pb-3 font-bold">Aspek Layanan</th>
+                    <th class="pb-3 font-bold text-rose-600">Ekspedisi Non-Resmi</th>
+                    <th class="pb-3 font-bold text-emerald-600 bg-emerald-50/60 px-3 rounded-t-lg">NGL Freight (Resmi)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <td class="py-3 font-semibold text-slate-800">Legalitas & PPJK</td>
+                    <td class="py-3 text-slate-500">Izin pinjam / tidak jelas</td>
+                    <td class="py-3 font-bold text-emerald-700 bg-emerald-50/60 px-3">PPJK Resmi Terdaftar Bea Cukai</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 font-semibold text-slate-800">Biaya Pajak & Handling</td>
+                    <td class="py-3 text-slate-500">Sering muncul biaya tambahan</td>
+                    <td class="py-3 font-bold text-emerald-700 bg-emerald-50/60 px-3">Transparan All-in Sesuai Invoice</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 font-semibold text-slate-800">Risiko Red Line / Sitaan</td>
+                    <td class="py-3 text-slate-500">Tinggi karena dokumen palsu</td>
+                    <td class="py-3 font-bold text-emerald-700 bg-emerald-50/60 px-3">Sangat Rendah (Jalur Hijau Prioritas)</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 font-semibold text-slate-800">Asuransi Kargo</td>
+                    <td class="py-3 text-slate-500">Tanpa perlindungan / parsial</td>
+                    <td class="py-3 font-bold text-emerald-700 bg-emerald-50/60 px-3">Marine Cargo Insurance Komprehensif</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 font-semibold text-slate-800">Pelacakan Posisi Barang</td>
+                    <td class="py-3 text-slate-500">Hanya info lisan chat WA</td>
+                    <td class="py-3 font-bold text-emerald-700 bg-emerald-50/60 px-3">Sistem Live Status & Tracking Portal</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <p class="text-xs font-bold text-slate-800">Lindungi Bisnis Anda dari Kerugian Logistik</p>
+                <p class="text-[11px] text-slate-500">Konsultasikan kebutuhan impor Anda sekarang tanpa komitmen awal.</p>
+              </div>
+              <a href="#kontak" class="px-4 py-2 rounded-lg bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs whitespace-nowrap shadow-sm">
+                Hubungi Konsultan Kami
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLIENT TESTIMONIALS & CASE STUDIES -->
+  <section class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-cargo-600 uppercase">Testimoni Klien</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">
+          Kisah Sukses Klien Kami Menembus Pasar Global
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Ulasan otentik dari perusahaan manufaktur, eksportir komoditas nusantara, dan pemilik brand nasional.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed mb-6">
+              "Kami mengimpor 8 kontainer mesin pabrik dari Guangzhou ke Surabaya. Sebelumnya kami selalu cemas dengan proses clearance di Tanjung Perak. Bersama tim NGL, SPPB keluar hanya dalam waktu 24 jam setelah kapal sandar. Luar biasa profesional!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-navy-900 text-white font-bold flex items-center justify-center text-xs">
+              HW
+            </div>
+            <div>
+              <h4 class="font-bold text-xs sm:text-sm text-slate-900">Hendra Wijaya</h4>
+              <p class="text-[11px] text-slate-500">Direktur Operasional, PT Sinar Makmur Plastindo</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed mb-6">
+              "Sebagai eksportir kopi Gayo dan rempah ke pasar Eropa, dokumen sertifikat fitosanitari dan SKA Form A sangat krusial. NGL mendampingi kami dari nol hingga buyer di Hamburg menerima barang tepat waktu tanpa komplain."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-cargo-600 text-white font-bold flex items-center justify-center text-xs">
+              RA
+            </div>
+            <div>
+              <h4 class="font-bold text-xs sm:text-sm text-slate-900">Rina Anggraini</h4>
+              <p class="text-[11px] text-slate-500">Founder, Nusantara Spice & Coffee Exporters</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed mb-6">
+              "Layanan Door-to-Door LCL dari NGL adalah penyelamat untuk bisnis e-commerce kami. Kami cukup serahkan kontak supplier di Yiwu, sisanya NGL yang urus sampai paket tiba di gudang Jakarta. Harganya sangat transparan!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-ocean-600 text-white font-bold flex items-center justify-center text-xs">
+              BP
+            </div>
+            <div>
+              <h4 class="font-bold text-xs sm:text-sm text-slate-900">Bambang Prakoso</h4>
+              <p class="text-[11px] text-slate-500">CEO, PT Urban Gadget Retail Indo</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (ACCORDION) -->
+  <section id="faq" class="py-20 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <span class="text-xs font-bold tracking-widest text-cargo-600 uppercase">Pertanyaan Umum</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">
+          Pusat Informasi & FAQ Ekspor Impor
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Jawaban lengkap seputar regulasi kepabeanan, izin usaha, perhitungan tarif, dan keamanan muatan.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+          <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
+            <span class="font-bold text-sm sm:text-base text-slate-900">Apa perbedaan FCL dan LCL? Kapan saya harus memilihnya?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/50">
+            <div class="py-4 space-y-2">
+              <p><strong>FCL (Full Container Load)</strong> adalah pengiriman satu kontainer penuh (20ft, 40ft, atau 40HC) khusus untuk barang milik Anda saja. Cocok untuk muatan volume di atas 15 CBM atau produk bernilai tinggi yang membutuhkan pengamanan khusus.</p>
+              <p><strong>LCL (Less than Container Load)</strong> adalah pengiriman konsolidasi, di mana muatan Anda digabungkan dengan pengirim lain dalam satu kontainer. Biaya dihitung per meter kubik (CBM), sangat ideal untuk pengiriman skala kecil hingga menengah (1 - 14 CBM) agar lebih hemat biaya.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+          <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
+            <span class="font-bold text-sm sm:text-base text-slate-900">Apa saja dokumen pokok yang dibutuhkan untuk melakukan impor resmi di Indonesia?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/50">
+            <div class="py-4 space-y-2">
+              <p>Untuk impor resmi jalur perizinan perusahaan, dokumen wajib meliputi:</p>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Nomor Induk Berusaha (NIB) yang berlaku sebagai API (Angka Pengenal Impor).</li>
+                <li>Commercial Invoice & Packing List dari supplier luar negeri.</li>
+                <li>Bill of Lading (B/L) untuk laut atau Airway Bill (AWB) untuk udara.</li>
+                <li>Certificate of Origin (COO / SKA) jika ingin memanfaatkan keringanan bea masuk (Form E untuk China, Form D untuk ASEAN).</li>
+                <li>Persetujuan Impor (PI) atau Laporan Surveyor (LS) bila barang termasuk kategori Lartas (Larangan dan Pembatasan).</li>
+              </ul>
+              <p>Jika perusahaan Anda belum memiliki izin lengkap, kami dapat menyediakan solusi <em>Undername / QQ</em> resmi.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+          <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
+            <span class="font-bold text-sm sm:text-base text-slate-900">Apakah saya bisa impor jika bisnis saya belum memiliki izin impor (NIB/API)?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/50">
+            <div class="py-4 space-y-2">
+              <p>Tentu bisa. Anda dapat menggunakan <strong>Layanan Undername Impor Resmi (Sewa Bendera Legal)</strong> atau <strong>Layanan Door to Door All-In</strong> dari Nusantara Global Logistics. Kami memfasilitasi legalitas dokumen kepabeanan dan pembayaran pajak impor resmi atas nama perusahaan terdaftar kami, sehingga barang Anda tetap 100% legal dan aman.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+          <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
+            <span class="font-bold text-sm sm:text-base text-slate-900">Berapa lama estimasi pengiriman dari China ke Indonesia?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/50">
+            <div class="py-4 space-y-2">
+              <p>Durasi pengiriman bergantung pada moda transportasi yang dipilih:</p>
+              <ul class="list-disc pl-5 space-y-1">
+                <li><strong>Sea Freight (Kargo Laut):</strong> Rata-rata 10 hingga 14 hari pelayaran (Port to Port), atau 18 - 24 hari untuk Door-to-Door (termasuk konsolidasi gudang dan clearance pabean).</li>
+                <li><strong>Air Freight (Kargo Udara):</strong> Rata-rata 3 hingga 5 hari kerja sampai di alamat tujuan.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+          <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
+            <span class="font-bold text-sm sm:text-base text-slate-900">Bagaimana jaminan keamanan barang dan klaim asuransi kargo?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/50">
+            <div class="py-4 space-y-2">
+              <p>Setiap pengiriman melalui Nusantara Global Logistics dapat dilengkapi dengan <strong>Marine Cargo Insurance (All Risks Clause A)</strong> dari institusi asuransi terkemuka. Asuransi mencakup risiko kerusakan fisik, kehilangan akibat bahaya laut/kecelakaan kapal, kebakaran, maupun pencurian. Tim klaim kami akan membantu proses survei dan pencairan ganti rugi secara transparan.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTEGRATED CONTACT & QUOTE REQUEST FORM -->
+  <section id="kontak" class="py-20 bg-gradient-to-br from-navy-900 via-navy-950 to-slate-900 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Contact Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cargo-500/20 text-cargo-400 border border-cargo-500/30 text-xs font-bold uppercase tracking-wider">
+            Fast Response Support
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading leading-tight">
+            Siap Mengirimkan Kargo Anda ke Penjuru Dunia?
+          </h2>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Isi formulir penawaran di samping atau hubungi tim customer dispatch kami langsung via WhatsApp untuk penawaran tarif resmi dalam waktu kurang dari 2 jam kerja.
+          </p>
+
+          <div class="space-y-4 pt-4 border-t border-navy-800">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-navy-800 border border-navy-700 flex items-center justify-center text-cargo-400 flex-shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Kantor Pusat Operasional</h4>
+                <p class="text-xs text-slate-400">Jl. Enggano No. 45, Tanjung Priok, Jakarta Utara 14310</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-navy-800 border border-navy-700 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Konsultasi WhatsApp 24/7</h4>
+                <p class="text-xs text-slate-400">+62 812-3456-7890 (Direct Fast Chat)</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-navy-800 border border-navy-700 flex items-center justify-center text-ocean-400 flex-shrink-0">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Email Penawaran Resmi</h4>
+                <p class="text-xs text-slate-400">inquiry@nusantaralogistics.co.id</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl p-7 sm:p-9 text-slate-800 shadow-2xl">
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-slate-900 mb-2">Formulir Permintaan Penawaran Kargo</h3>
+            <p class="text-xs text-slate-500 mb-6">Konsultasi tarif, jadwal kapal, dan kelengkapan dokumen gratis tanpa biaya.</p>
+
+            <form id="quoteForm" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Lengkap *</label>
+                  <input type="text" id="contactName" required placeholder="Budi Santoso" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-cargo-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Perusahaan / Usaha</label>
+                  <input type="text" id="contactCompany" placeholder="PT Nusantara Sukses Mandiri" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-cargo-500">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Nomor WhatsApp Aktif *</label>
+                  <input type="tel" id="contactPhone" required placeholder="081234567890" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-cargo-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Email Bisnis</label>
+                  <input type="email" id="contactEmail" placeholder="budi@perusahaan.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-cargo-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Layanan yang Dibutuhkan</label>
+                <select id="contactService" class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-cargo-500">
+                  <option value="Impor Sea Freight FCL / LCL">Impor Sea Freight (FCL / LCL)</option>
+                  <option value="Impor Air Freight Express">Impor Air Freight Express</option>
+                  <option value="Customs Clearance & PPJK Bea Cukai">Jasa Customs Clearance & PPJK Saja</option>
+                  <option value="Door to Door All-In Import">Layanan Door to Door All-In (Terima Beres)</option>
+                  <option value="Jasa Ekspor Komoditas / Undername">Jasa Ekspor Komoditas & Pendampingan UMKM</option>
+                  <option value="Pergudangan Berikat (PLB)">Pergudangan Berikat & Logistik</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Detail Kargo & Rute Pengiriman *</label>
+                <textarea id="contactMessage" required rows="3" placeholder="Contoh: Rencana impor 5 CBM sparepart mesin dari Guangzhou ke Jakarta. Sudah ada invoice & packing list." class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2.5 px-3 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-cargo-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-xl bg-cargo-500 hover:bg-cargo-600 text-white font-bold text-sm sm:text-base shadow-lg shadow-cargo-500/25 transition-all flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Kirim Permintaan Penawaran via WhatsApp</span>
+              </button>
+            </form>
+
+            <!-- Success Toast (Hidden initially) -->
+            <div id="quoteSuccessToast" class="hidden mt-4 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+              <span>Pesan WhatsApp berhasil dibuat! Tab chat WhatsApp telah terbuka. Tim kami akan segera menanggapi rincian Anda.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-slate-400 text-xs pt-16 pb-12 border-t border-navy-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-navy-900">
+        
+        <!-- Company Info Col -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-cargo-500 flex items-center justify-center text-white">
+              <i data-lucide="ship" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="font-heading font-extrabold text-lg text-white tracking-tight">NUSANTARA GLOBAL</span>
+              <p class="text-[10px] text-slate-400 font-medium tracking-wider">LOGISTICS & FREIGHT FORWARDING</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Perusahaan jasa ekspedisi muatan kapal laut (EMKL), ekspedisi muatan pesawat udara (EMPU), dan Pengusaha Pengurusan Jasa Kepabeanan (PPJK) resmi berlisensi di Indonesia.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" class="w-8 h-8 rounded-lg bg-navy-900 text-slate-300 hover:text-white hover:bg-navy-800 flex items-center justify-center transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-navy-900 text-slate-300 hover:text-white hover:bg-navy-800 flex items-center justify-center transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-navy-900 text-slate-300 hover:text-white hover:bg-navy-800 flex items-center justify-center transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-white text-sm mb-4 font-heading">Navigasi Utama</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#tentang" class="hover:text-white transition-colors">Tentang Perusahaan</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Layanan Logistik</a></li>
+            <li><a href="#rute" class="hover:text-white transition-colors">Rute Pelayaran</a></li>
+            <li><a href="#quick-tools" class="hover:text-white transition-colors">Kalkulator Tarif</a></li>
+            <li><a href="#quick-tools" class="hover:text-white transition-colors">Lacak Kontainer / AWB</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Pusat Bantuan FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div>
+          <h4 class="font-bold text-white text-sm mb-4 font-heading">Layanan Unggulan</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#layanan" class="hover:text-white transition-colors">Sea Freight FCL & LCL</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Air Freight Express Cargo</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Customs Clearance PPJK</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Door to Door All-In</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Pusat Logistik Berikat</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Pendampingan Ekspor UMKM</a></li>
+          </ul>
+        </div>
+
+        <!-- Office Branches -->
+        <div>
+          <h4 class="font-bold text-white text-sm mb-4 font-heading">Jaringan Kantor</h4>
+          <div class="space-y-3 text-xs">
+            <div>
+              <strong class="text-slate-200 block">Jakarta Head Office:</strong>
+              <span class="text-slate-400">Jl. Enggano No. 45, Tanjung Priok, Jakarta Utara</span>
+            </div>
+            <div>
+              <strong class="text-slate-200 block">Surabaya Branch:</strong>
+              <span class="text-slate-400">Kawasan Perak Timur No. 112, Surabaya</span>
+            </div>
+            <div>
+              <strong class="text-slate-200 block">Singapore Hub:</strong>
+              <span class="text-slate-400">10 Anson Road, International Plaza, Singapore</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <p>© 2026 PT Nusantara Global Logistics Tbk. Hak Cipta Dilindungi Undang-Undang.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-400 transition-colors">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-slate-400 transition-colors">Syarat & Ketentuan Pengangkutan</a>
+          <a href="#" class="hover:text-slate-400 transition-colors">Incoterms 2020 Guide</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CTA BUTTON -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Nusantara%20Global%20Logistics%2C%20saya%20ingin%20konsultasi%20pengiriman%20kargo%20ekspor%20impor." target="_blank" aria-label="Chat WhatsApp Langsung" class="fixed bottom-6 right-6 z-50 p-3.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-2xl hover:scale-110 transition-all flex items-center justify-center pulse-glow">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
